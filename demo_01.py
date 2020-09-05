@@ -78,22 +78,22 @@ def main():
             5,
         )
 
-        vct_calc = dir_basic.rotated(fix)
+        vct_calc = dir_basic.rotated(raw)
         pyxel.line(
             CENTER_X,
             CENTER_Y,
             CENTER_X + vct_calc.x * 64,
             CENTER_Y + vct_calc.y * 64,
-            12,
+            7,
         )
 
-        vct_calc = dir_basic.rotated(raw)
+        vct_calc = dir_basic.rotated(fix)
         pyxel.line(
             CENTER_X,
             CENTER_Y,
-            CENTER_X + dir_mouse.x * 64,
-            CENTER_Y + dir_mouse.y * 64,
-            7,
+            CENTER_X + vct_calc.x * 48,
+            CENTER_Y + vct_calc.y * 48,
+            12,
         )
 
         list_text = [
